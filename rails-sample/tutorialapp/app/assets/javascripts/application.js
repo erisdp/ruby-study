@@ -13,4 +13,12 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require bootstrap-material-design
+//= require bootstrap-sprockets
 //= require_tree .
+
+/* TODO. comment out.
+$(document).on('ready page:load', function() {
+  $.material.init();
+});
+*/
