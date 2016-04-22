@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'sessions/new'
+
   get 'users/new'
 
   #resources :projects do
@@ -9,12 +11,14 @@ Rails.application.routes.draw do
   #post '/projects/:project_id/tasks/:id/toggle' => 'tasks#toggle'
 
   # static
-  root             'static_pages#home'
-  get 'help'    => 'static_pages#help'
-  get 'about'   => 'static_pages#about'
-  get 'contact' => 'static_pages#contact'
-
-  get 'signup'  => 'users#new'
+  root               'static_pages#home'
+  get 'help'      => 'static_pages#help'
+  get 'about'     => 'static_pages#about'
+  get 'contact'   => 'static_pages#contact'
+  get 'signup'    => 'users#new'
+  get 'login'     => 'sessions#new'
+  post 'login'    => 'sessions#create'
+  delete 'logout' => 'sessions#destroy'
 
   resources :users
 

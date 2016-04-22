@@ -12,9 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require bootstrap
 //= require turbolinks
 //= require bootstrap-material-design
-//= require bootstrap-sprockets
+//= //require bootstrap-sprockets
 //= require_tree .
 
 /* TODO. comment out.
